@@ -27,9 +27,9 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color:            #f8f8f8;
+  --cd-body-background-color:            #C3CBFA;
   --cd-content-background-color:         #ffffff;
-  --cd-faded-background-color:           #f8f8f8;
+  --cd-faded-background-color:           #C3CBFA;
 
   /* Background Extras */
   --cd-body-background-image:             url(https://img-l.ink/img/1icCopY78DaljkOZImxbvf3c8E_EZtwUt.png);
@@ -542,14 +542,6 @@ body {
     #main-container {
         padding: 5rem 1.5rem;
     }
-}
-
-/* Fades container in on load so its not as jarring */
-.softload {
-  opacity: 0;
-} .softload.active {
-  opacity: 1;
-  transition: opacity 2s ease;
 }
 
 /* Remove ugly box shadow */
