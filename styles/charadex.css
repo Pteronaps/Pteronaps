@@ -105,7 +105,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color:                  #4c8ebd;
+  --cd-link-text-color:                  #460E9B;
   --cd-link-text-color-hover:            var(--cd-secondary-color);
 
 
@@ -165,7 +165,7 @@ body {
   --cd-button-background-color-hover:    var(--cd-secondary-color);
 
   /* Text */
-  --cd-button-text-color:                var(--cd-primary-text-color);
+  --cd-button-text-color:                #352B53;
   --cd-button-text-color-hover:          var(--cd-secondary-text-color);
 
   /* Border */
