@@ -544,6 +544,14 @@ body {
     }
 }
 
+/* Fades container in on load so its not as jarring */
+.softload {
+  opacity: 0;
+} .softload.active {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
 /* Remove ugly box shadow */
 button:focus,
 .page-link:focus,
