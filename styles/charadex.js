@@ -56,7 +56,7 @@ const scrubData = (sheetData) => {
 let optionSorter = (options) => {
 
     // Clean up the sheetID - in case they used a link instead
-    let scrubbedSheetId = sheetID ? sheetID.includes('/d/') ? sheetID.split('/d/')[1].split('/edit')[0] : sheetID : "1D6pOvnrmI_AmmjZ9AiFIVNCPipu9z-LGHlnRt-4fsl0";
+    let scrubbedSheetId = sheetID ? sheetID.includes('/d/') ? sheetID.split('/d/')[1].split('/edit')[0] : sheetID : "1l_F95Zhyj5OPQ0zs-54pqacO6bVDiH4rlh16VhPNFUc";
 
     // Call all options, make defaults of our own
     let userOptions = options;
@@ -352,7 +352,7 @@ const charadexLarge = async (options) => {
         };
 
         // Filter out the right card
-        let singleCard = sheetArray.filter((i) => i[cardKey].includes(urlParams.get(cardKey)))[0];
+        let singleCard = sheetArray.filter((i) => (i[cardKey] === urlParams.get(cardKey)))[0];
 
         // Render card
         let charadexItem = new List("charadex-gallery", itemOptions, singleCard);
@@ -450,7 +450,7 @@ const masterlist = async (options) => {
 
         // Filter out the right card
         let currCardKey = urlParams.has(cardKey) ? cardKey : cardKeyAlt;
-        let singleCard = sheetArray.filter((i) => i[currCardKey].includes(urlParams.get(currCardKey)))[0];
+        let singleCard = sheetArray.filter((i) => (i[currCardKey] === urlParams.get(currCardKey)))[0];
 
         // Grab the log sheet and render log
         let logArray = await fetchSheet(charadexInfo.logSheetPage);
@@ -537,7 +537,7 @@ const inventory = async (options) => {
         };
 
         // Filter out the right card
-        let singleCard = sheetArray.filter((i) => i[cardKey].includes(urlParams.get(cardKey)))[0];
+        let singleCard = sheetArray.filter((i) => (i[cardKey] === urlParams.get(cardKey)))[0];
 
         // Merge the user's inventory with the item sheet
         // Also remove any items they dont have atm
