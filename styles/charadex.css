@@ -62,8 +62,8 @@ body {
   /* ============================================================= */
   /* Main Fonts
   ================================================================ */
-  --cd-body-font-family:                 'American Typewriter', serif, 900;
-  --cd-header-font-family:               'American Typewriter', serif, 900;
+  --cd-body-font-family:                 'American Typewriter', bolder;
+  --cd-header-font-family:               'American Typewriter', bolder;
 
 
   /* ============================================================= */
