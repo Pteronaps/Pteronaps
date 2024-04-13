@@ -62,8 +62,8 @@ body {
   /* ============================================================= */
   /* Main Fonts
   ================================================================ */
-  --cd-body-font-family:                 'American Typewriter', serif;
-  --cd-header-font-family:               'Comfortaa', sans-serif;
+  --cd-body-font-family:                 'American Typewriter', serif, bold;
+  --cd-header-font-family:               'American Typewriter', serif, bold;
 
 
   /* ============================================================= */
