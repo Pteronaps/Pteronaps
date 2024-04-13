@@ -62,7 +62,7 @@ body {
   /* ============================================================= */
   /* Main Fonts
   ================================================================ */
-  --cd-body-font-family:                 'American Typewriter', serif, bold;
+  --cd-body-font-family:                 'American Typewriter', serif, bolder;
   --cd-header-font-family:               'American Typewriter', serif, bold;
 
 
