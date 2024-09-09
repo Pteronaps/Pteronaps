@@ -47,6 +47,20 @@ let options = {
     },
 
 
+    /* News
+    /* --------------------------------------------------------------- */
+    news: {
+    
+        sheetPage: sheetPages.news,
+
+        itemAmount: 24,
+        itemOrder: "desc",
+
+        searchFilterParams: ['Title'],
+    
+    },
+
+    
     /* Masterlist
     /* --------------------------------------------------------------- */
     masterlist: {
