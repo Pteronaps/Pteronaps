@@ -10,6 +10,7 @@ let sheetID = "1D6pOvnrmI_AmmjZ9AiFIVNCPipu9z-LGHlnRt-4fsl0";
 /* ------------------------------------------------------------------- */
 let sheetPages = {
 
+    news: "news",
     masterlist: "masterlist",
     masterlistLog: "masterlist log",
     inventory: "inventory",
@@ -17,6 +18,7 @@ let sheetPages = {
     items: "items",
     traits: "traits",
     prompts: "prompts",
+    miniprompts: "miniprompts",
     faq: "faq",
     staff: "mods",
 
@@ -108,6 +110,20 @@ let options = {
     },
 
 
+    /* Mini Prompts
+    /* --------------------------------------------------------------- */
+    miniprompts: {
+    
+        sheetPage: sheetPages.miniprompts,
+
+        itemAmount: 24,
+        itemOrder: "desc",
+
+        searchFilterParams: ['Title'],
+    
+    },
+
+    
     /* Traits
     /* --------------------------------------------------------------- */
     traits: {
