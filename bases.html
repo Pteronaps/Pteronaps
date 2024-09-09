@@ -60,27 +60,27 @@
 
 
     <!-- --------------------------------------------------------------------
-    <-- About World
+    <-- Terms
+    <-- I've provided a boiler plate, edit these how you see fit!
     <-------------------------------------------------------------------- -->
     <div class="container softload py-md-5 my-4 py-4" id="main-container">
 
-
-<!-- section i
+        <!-- section i
         <-------------------------------------------------------------------- -->
         <div class="card p-md-5 p-4 mb-5">
             <h1 class="text-primary mb-3">Pteronaps F2U Base</h1>
             <ol class="ml-4 mb-0">
-            <p><a href="https://www.mediafire.com/file/kg7lap02a54trd2/Official_Pteronaps_Base.psd/file">
-<img class="img-fluid" src="https://img-l.ink/img/1XAH2HBzydcmyf_dUzp7MQGdT417K1Q-g.png" alt=""></a></p>
-            <p>Click on the image to be sent to the download page for the official, free-to-use base!</p>
-
-            <p>The base is a PSD file, and only works on computer art programs.
-            Though, it could possibly work on a mobile art app that uses PSD files!
-            Just make sure to check your device before downloading!</p>
-            </ol>  
-            
-        </BR>
+              <p><a href="https://www.mediafire.com/file/kg7lap02a54trd2/Official_Pteronaps_Base.psd/file">
+                <img class="img-fluid" src="https://img-l.ink/img/1XAH2HBzydcmyf_dUzp7MQGdT417K1Q-g.png" alt=""></a></p>
+                            <p>Click on the image to be sent to the download page for the official, free-to-use base!</p>
                 
+                            <p>The base is a PSD file, and only works on computer art programs.
+                            Though, it could possibly work on a mobile art app that uses PSD files!
+                            Just make sure to check your device before downloading!</p>
+                            </ol>
+                
+        </BR>
+
             <h1 class="text-primary mb-3">Pteronaps F2U Homemaker</h1>
             <ol class="ml-4 mb-0">
             <p><a href="https://www.mediafire.com/file/5t1axaf62fxvcyg/Pteronap_Home_Maker_PSD.psd/file">
@@ -93,7 +93,8 @@ You will be able to make your Pteronap their own little home! You may add in you
             Just make sure to check your device before downloading!</p>
             </ol>
         </div>
-        
+    </div>
+
 
     <!-- --------------------------------------------------------------------
     <-- Footer
@@ -115,8 +116,60 @@ You will be able to make your Pteronap their own little home! You may add in you
     <!-- Charadex Script -->
     <script src="styles/charadex.js"></script>
 
-    </div>
+    <style>
+body {
+  font-family: Montserrat, Comfortaa, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #7792e3;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #ac8ff3;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 
 </html>
+
