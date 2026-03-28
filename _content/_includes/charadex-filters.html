@@ -1,0 +1,18 @@
+<div style="display:none;" id="charadex-filters">
+    <hr class="w-100 mb-4">
+    <div class="row no-gutters m-n1">
+        {% if customFilter %}
+        <div class="col-md-3 col-12 p-1" style="display: none;">
+            <select class="form-control bg-faded" id="filter"></select>
+        </div>
+        {% endif %}
+        {% if searchFilter %}
+        <div class="col-md-3 col-3 p-1" style="display: none;">
+            <select class="form-control bg-faded" id="search-filter"></select>
+        </div>
+        {% endif %}
+        <div class="{{ searchClass | default: 'col-md col-9 p-1' }}">
+            <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
+        </div>
+    </div>
+</div>

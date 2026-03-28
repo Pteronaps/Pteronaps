@@ -1,0 +1,85 @@
+---
+layout: base.html
+pageScript: "charadexLarge(options.news);"
+---
+
+    <!-- --------------------------------------------------------------------
+    <-- Masterlist
+    <-------------------------------------------------------------------- -->
+    <div class="container softload masterlist-container" id="main-container">
+
+
+        <!-- Gallery Container
+        ------------------------------------------------------------------- -->
+        <div id="charadex-gallery">
+
+
+            <!-- Filters
+            ----------------------------------------------------------------- -->
+            <div class="card p-md-5 p-4 mb-4">
+
+                <h3 class="mb-0"><a href="news.html">News</a></h3>
+
+                {% include "charadex-filters.html" %}
+                {% include "charadex-pagination.html" %}
+
+            </div>
+
+
+            <!-- Repeated Items Render Here
+            ----------------------------------------------------------------- -->
+            <ul class="row no-gutters list list-unstyled m-n2"></ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- --------------------------------------------------------------------
+    <-- Repeat Items
+    <-- Do not remove 'display:none;'
+    <-- Edit these to your liking
+    <-------------------------------------------------------------------- -->
+    <div style="display:none;">
+
+
+        <!-- Gallery Items
+        ------------------------------------------------------------------- -->
+        <li class="col-md-6 p-2" id="charadex-entries">
+            <a class="card h-100 cardlink" href="">
+                <h5 class="card-header text-center title"></h5>
+                <div class="card-body p-0 d-flex flex-fill">
+                    <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
+                </div>
+            </a>
+        </li>
+
+
+        <!-- Singular Item
+        ------------------------------------------------------------------- -->
+        <li class="col-12 p-2" id="charadex-card">
+
+            <!-- Actual Card -->
+            <div class="card">
+
+                <!-- Header -->
+                <h2 class="card-header text-center p-4 title"></h2>
+
+                <!--Main Info -->
+                <div class="p-md-5 p-4">
+
+                    <!-- Image -->
+                    <div class="text-center" oncontextmenu="return false">
+                        <img class="image img-fluid rounded" src="">
+                    </div>
+                    <hr>
+
+                    <!-- Description -->
+                    <div class="px-4 py-2 text-pre description"></div>
+                    <hr>
+                </div>
+            </div>
+        </li>
+
+
+    </div>

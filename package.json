@@ -1,0 +1,16 @@
+{
+  "name": "pteronaps",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The official Pteronaps Charadex.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}

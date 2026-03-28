@@ -1,0 +1,79 @@
+---
+layout: base.html
+pageScript: "charadexLarge(options.faq);"
+---
+
+    <!-- --------------------------------------------------------------------
+    <-- Masterlist
+    <-------------------------------------------------------------------- -->
+    <div class="container softload masterlist-container" id="main-container">
+
+
+        <!-- Gallery Container
+        ------------------------------------------------------------------- -->
+        <div id="charadex-gallery">
+
+
+            <!-- Filters
+            ----------------------------------------------------------------- -->
+            <div class="card p-md-5 p-4 mb-4">
+
+                <h3 class="mb-0"><a href="faq.html">FAQ</a></h3>
+
+                {% include "charadex-filter-buttons.html" %}
+                {% include "charadex-filters.html", searchClass: "col p-1" %}
+                {% include "charadex-pagination.html" %}
+
+            </div>
+
+
+            <!-- Repeated Items Render Here
+            ----------------------------------------------------------------- -->
+            <ul class="row no-gutters list list-unstyled m-n2"></ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- --------------------------------------------------------------------
+    <-- Repeat Items
+    <-- Do not remove 'display:none;'
+    <-- Edit these to your liking
+    <-------------------------------------------------------------------- -->
+    <div style="display:none;">
+
+
+        <!-- Gallery Items
+        ------------------------------------------------------------------- -->
+        <li class="col-12 p-2" id="charadex-entries">
+            <div class="card d-block p-4">
+                <a class="d-block cardlink" href="">
+                    <b><span class="question"></span></b>
+                </a>
+                <div class="px-4 pt-2 text-pre answer"></div>
+                <hr>
+                <div class="row no-gutters small px-2 mb-n2">
+                    <div class="col-auto"><b>Tags</b></div>
+                    <div class="col text-right tags"></div>
+                </div>
+            </div>
+        </li>
+
+
+        <!-- Singular Item
+        ------------------------------------------------------------------- -->
+        <li class="col-12 p-2" id="charadex-card">
+            <div class="card d-block p-4">
+                <b><span class="question"></span></b>
+                <div class="px-4 pt-2 text-pre answer"></div>
+                <hr>
+                <div class="row no-gutters small px-2 mb-n2">
+                    <div class="col-auto"><b>Tags</b></div>
+                    <div class="col text-right tags"></div>
+                </div>
+            </div>
+        </li>
+
+
+    </div>
