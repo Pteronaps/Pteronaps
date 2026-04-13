@@ -1,8 +1,7 @@
 export default function (eleventyConfig) {
-  // Copy static asset folders to _site/ unchanged
-  eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("styles");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("styles");
+  eleventyConfig.addPassthroughCopy("assets");
 
   return {
     dir: {
