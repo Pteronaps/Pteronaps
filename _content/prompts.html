@@ -1,99 +1,83 @@
 ---
-layout: base.html
+layout: layout.html
+title: Prompts
 pageScript: "charadexLarge(options.prompts);"
 ---
 
-    <!-- --------------------------------------------------------------------
-    <-- Masterlist
-    <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
+<!-- Prompts -->
+<div class="container-fluid text-center softload" id="main-container">
 
+    <!-- Gallery Container -->
+    <div id="charadex-gallery">
 
-        <!-- Gallery Container
-        ------------------------------------------------------------------- -->
-        <div id="charadex-gallery">
+        <!-- Filters -->
+        <div class="card p-md-5 p-4 mb-4">
 
+            <h3 class="mb-0"><a href="prompts.html">Prompts</a></h3>
 
-            <!-- Filters
-            ----------------------------------------------------------------- -->
-            <div class="card p-md-5 p-4 mb-4">
-
-                <h3 class="mb-0"><a href="prompts.html">Prompts</a></h3>
-
-                {% include "charadex-filters.html" %}
-                {% include "charadex-pagination.html" %}
-
-            </div>
-
-
-            <!-- Repeated Items Render Here
-            ----------------------------------------------------------------- -->
-            <ul class="row no-gutters list list-unstyled m-n2"></ul>
+            {% include "charadex-filters.html" %}
+            {% include "charadex-pagination.html" %}
 
         </div>
 
+        <!-- Repeated Items Render Here -->
+        <ul class="row no-gutters list list-unstyled m-n2"></ul>
+
     </div>
 
-
-    <!-- --------------------------------------------------------------------
-    <-- Repeat Items
-    <-- Do not remove 'display:none;'
-    <-- Edit these to your liking
-    <-------------------------------------------------------------------- -->
-    <div style="display:none;">
+</div>
 
 
-        <!-- Gallery Items
-        ------------------------------------------------------------------- -->
-        <li class="col-md-6 p-2" id="charadex-entries">
-            <a class="card h-100 cardlink" href="">
-                <h5 class="card-header text-center title"></h5>
-                <div class="card-body p-0 d-flex flex-fill">
-                    <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
-                </div>
-            </a>
-        </li>
+<!-- Repeat Items (do not remove 'display:none;') -->
+<div style="display:none;">
 
-
-        <!-- Singular Item
-        ------------------------------------------------------------------- -->
-        <li class="col-12 p-2" id="charadex-card">
-
-            <!-- Actual Card -->
-            <div class="card">
-
-                <!-- Header -->
-                <h2 class="card-header text-center p-4 title"></h2>
-
-                <!--Main Info -->
-                <div class="p-md-5 p-4">
-
-                    <!-- Image -->
-                    <div class="text-center" oncontextmenu="return false">
-                        <img class="image img-fluid rounded" src="">
-                    </div>
-                    <hr>
-
-                    <!-- Description -->
-                    <div class="px-4 py-2 text-pre description"></div>
-                    <hr>
-
-                    <!-- Description -->
-                    <div class="row no-gutters">
-                        <div class="col-md-6 px-4 d-flex justify-content-between">
-                            <b>Starts</b> <span class="startdate"></span>
-                        </div>
-                        <div class="col-md-6 px-4 d-flex justify-content-between">
-                            <b>Ends</b> <span class="enddate"></span>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <a href="https://toyhou.se/~forums/27731.prompt-submission-hub/291629.prompt-submission-thread" target="_BLANK" class="btn btn-block btn-primary">Submit Entry(ies)</a>
-
-                </div>
+    <!-- Gallery Items -->
+    <li class="col-md-6 p-2" id="charadex-entries">
+        <a class="card h-100 cardlink" href="">
+            <h5 class="card-header text-center title"></h5>
+            <div class="card-body p-0 d-flex flex-fill">
+                <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
             </div>
-        </li>
+        </a>
+    </li>
 
+    <!-- Singular Item -->
+    <li class="col-12 p-2" id="charadex-card">
 
-    </div>
+        <!-- Actual Card -->
+        <div class="card">
+
+            <!-- Header -->
+            <h2 class="card-header text-center p-4 title"></h2>
+
+            <!-- Main Info -->
+            <div class="p-md-5 p-4">
+
+                <!-- Image -->
+                <div class="text-center" oncontextmenu="return false">
+                    <img class="image img-fluid rounded" src="">
+                </div>
+                <hr>
+
+                <!-- Description -->
+                <div class="px-4 py-2 text-pre description"></div>
+                <hr>
+
+                <!-- Dates -->
+                <div class="row no-gutters">
+                    <div class="col-md-6 px-4 d-flex justify-content-between">
+                        <b>Starts</b> <span class="startdate"></span>
+                    </div>
+                    <div class="col-md-6 px-4 d-flex justify-content-between">
+                        <b>Ends</b> <span class="enddate"></span>
+                    </div>
+                </div>
+                <hr>
+
+                <a href="https://toyhou.se/~forums/27731.prompt-submission-hub/291629.prompt-submission-thread" target="_BLANK" class="btn btn-block btn-primary">Submit Entry(ies)</a>
+
+            </div>
+        </div>
+    </li>
+
+</div>

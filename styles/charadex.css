@@ -540,7 +540,7 @@ body {
 
 @media (min-width: 768px) {
     #main-container {
-        padding: 5rem 1.5rem;
+        padding: 2.5rem 1.5rem;
     }
 }
 
@@ -640,5 +640,76 @@ p:last-child {
     .hero-title {
         letter-spacing: 2px;
         font-size: 5rem;
+    }
+}
+
+/* Tablet optimizations for touch targets and readability */
+@media (max-width: 1024px) {
+    /* Ensure buttons have adequate touch targets */
+    .btn, button, a.btn {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 0.6rem 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Improve card padding on tablets */
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    /* Better spacing for form controls */
+    .form-control, .form-select {
+        min-height: 44px;
+        padding: 0.6rem 0.75rem;
+        font-size: 1rem;
+    }
+
+    /* Better link targets */
+    a:not(.btn) {
+        padding: 0.25rem 0.1rem;
+    }
+
+    /* Improve gallery item sizes on tablets */
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Small tablets and phones */
+@media (max-width: 767px) {
+    /* Ensure all interactive elements meet 44x44 minimum */
+    .btn, button, a.btn, .nav-link, a[href] {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .btn, button, a.btn {
+        padding: 0.6rem 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-control, .form-select, input, textarea, select {
+        min-height: 44px;
+        padding: 0.6rem 0.75rem;
+        font-size: 1rem;
+    }
+
+    /* Improve readability */
+    body {
+        font-size: 16px;
+    }
+
+    /* Better spacing between elements */
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .row > * {
+        margin-bottom: 1rem;
     }
 }

@@ -1,69 +1,56 @@
 ---
-layout: base.html
+layout: layout.html
+title: About Us
 pageScript: "charadexSmall(options.staff);"
 ---
 
-    <!-- --------------------------------------------------------------------
-    <-- Masterlist
-    <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
+<!-- Staff -->
+<div class="container-fluid text-center softload" id="main-container">
 
+    <!-- Gallery Container -->
+    <div id="charadex-gallery">
 
-        <!-- Gallery Container
-        ------------------------------------------------------------------- -->
-        <div id="charadex-gallery">
-
-
-            <!-- Filters
-            ----------------------------------------------------------------- -->
-            <div class="card p-md-5 p-4 mb-4">
-                <h3 class="mb-0">
-                    <a href="staff.html">Our Sanctuary Staff</a>
-                </h3>
-                <hr>
-                <div class="pl-3 text-muted">
-
-                    <p>The ones who help run and maintain the Pteronap Sanctuary!</p>
-
-                </div>
+        <!-- Filters -->
+        <div class="card p-md-5 p-4 mb-4">
+            <h3 class="mb-0">
+                <a href="staff.html">Our Sanctuary Staff</a>
+            </h3>
+            <hr>
+            <div class="pl-3 text-muted">
+                <p>The ones who help run and maintain the Pteronap Sanctuary!</p>
             </div>
-
-
-            <!-- Repeated Items Render Here
-            ----------------------------------------------------------------- -->
-            <ul class="row no-gutters list list-unstyled m-n2"></ul>
-
         </div>
 
+        <!-- Repeated Items Render Here -->
+        <ul class="row no-gutters list list-unstyled m-n2"></ul>
+
     </div>
 
+</div>
 
-    <!-- --------------------------------------------------------------------
-    <-- Repeat Items
-    <-- Do not remove 'display:none;'
-    <-- Edit these to your liking
-    <-------------------------------------------------------------------- -->
-    <div style="display:none;">
 
-        <li class="col-md-6 p-2" id="charadex-entries">
-            <div class="card p-4 h-100">
-                <div class="row no-gutters">
+<!-- Repeat Items (do not remove 'display:none;') -->
+<div style="display:none;">
 
-                    <div class="col-4 p-2">
-                        <img class="image rounded-circil img-fluid" src="">
-                    </div>
+    <li class="col-md-6 p-2" id="charadex-entries">
+        <div class="card p-4 h-100">
+            <div class="row no-gutters">
 
-                    <div class="col-8 p-2">
-                        <div class="d-flex justify-content-between">
-                            <a class="link" href=""><b class="username"></b></a>
-                            <span class="badge badge-primary my-auto"><span class="jobtitle"></span></span>
-                        </div>
-                        <hr class="mt-2">
-                        <div class="small text-muted text-pre information px-2"></div>
-                    </div>
-
+                <div class="col-4 p-2">
+                    <img class="image rounded-circil img-fluid" src="">
                 </div>
-            </div>
-        </li>
 
-    </div>
+                <div class="col-8 p-2">
+                    <div class="d-flex justify-content-between">
+                        <a class="link" href=""><b class="username"></b></a>
+                        <span class="badge badge-primary my-auto"><span class="jobtitle"></span></span>
+                    </div>
+                    <hr class="mt-2">
+                    <div class="small text-muted text-pre information px-2"></div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+
+</div>

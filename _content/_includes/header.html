@@ -1,25 +1,22 @@
-<nav class="nav navbar navbar-expand-md py-4">
-    <div class="container">
-
-        <!-- Brand
-        <a class="navbar-brand" href="/"><img src="https://img-l.ink/img/13QwTuT0Quy3bLICcU_eHU4ie24kjzxyO.png" alt="starberry" style="width:45px;height:45px;"></i> Pteronaps</a> -->
-
-        <!-- Toggle -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav">
+<nav class="navbar navbar-expand-lg split-nav">
+    <div class="container-fluid px-0">
+        <a class="nav-logo d-flex align-items-center justify-content-center flex-shrink-0" href="/">
+            <img src="/assets/pteroicon.png" alt="Pteronaps">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav" aria-controls="charadexnav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars"></i>
         </button>
-
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="charadexnav">
-            <ul class="navbar-nav ml-auto">
-
-                
-                <a class="nav-link" href="/news/">News</a>
-
-
+        <div class="collapse navbar-collapse nav-menu-strip ml-lg-3 mt-2 mt-lg-0" id="charadexnav">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link" href="/">Pteronaps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news/">News</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" data-toggle="dropdown"> Explore <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Explore <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
                         <a class="dropdown-item" href="/species/">About Species & Traits</a>
                         <a class="dropdown-item" href="/world/">About World</a>
                         <a class="dropdown-item" href="/pets/">About Pets</a>
@@ -28,10 +25,9 @@
                         <a class="dropdown-item" href="https://discord.gg/G7PVCa24Me">Discord Server</a>
                     </div>
                 </li>
-
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" data-toggle="dropdown">Catalogue <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Catalogue <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
                         <a class="dropdown-item" href="/masterlist/">Species Masterlist</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/prompts/">Prompts</a>
@@ -40,10 +36,9 @@
                         <a class="dropdown-item" href="/inventories/">Player Inventories</a>
                     </div>
                 </li>
-
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" data-toggle="dropdown">Help <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Help <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
                         <a class="dropdown-item" href="/staff/">About Us</a>
                         <a class="dropdown-item" href="/terms/">TOS</a>
                         <a class="dropdown-item" href="/faq/">FAQ</a>
@@ -52,7 +47,6 @@
                         <a class="dropdown-item" href="https://toyhou.se/~messages/create/kikos">Contact</a>
                     </div>
                 </li>
-
             </ul>
         </div>
     </div>

@@ -1,196 +1,174 @@
 ---
-layout: base.html
+layout: layout.html
+title: Species Masterlist
 pageScript: "masterlist(options.masterlist);"
 ---
 
-    <!-- --------------------------------------------------------------------
-    <-- Masterlist
-    <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
+<!-- Species Masterlist -->
+<div class="container-fluid text-center softload" id="main-container">
 
+    <!-- Gallery Container -->
+    <div id="charadex-gallery">
 
-        <!-- Gallery Container
-        ------------------------------------------------------------------- -->
-        <div id="charadex-gallery">
+        <!-- Filters -->
+        <div class="card p-md-5 p-4 mb-4">
 
+            <h3 class="mb-0"><a href="/masterlist/">Species Masterlist</a></h3>
 
-            <!-- Filters
-            ----------------------------------------------------------------- -->
-            <div class="card p-md-5 p-4 mb-4">
+            {% include "charadex-filter-buttons.html" %}
+            {% include "charadex-filters.html", customFilter: true, searchFilter: true %}
+            {% include "charadex-pagination.html" %}
 
-                <h3 class="mb-0"><a href="/masterlist/">Species Masterlist</a></h3>
-
-                {% include "charadex-filter-buttons.html" %}
-                {% include "charadex-filters.html", customFilter: true, searchFilter: true %}
-                {% include "charadex-pagination.html" %}
-
-                <!-- Prev & Next Topbar -->
-                <div style="display: none;" id="prevNext">
-                    <hr class="mb-4">
-                    <div class="row no-gutters px-2 mb-n3 font-weight-bold text-uppercase">
-                        <div class="col-6 px-1"><a id="entryPrev" href=""><i class="fa fa-chevron-left mr-2"></i><span></span></a></div>
-                        <div class="col-6 px-1 text-right order-md-1"><a id="entryNext" href=""><span></span><i class="fa fa-chevron-right ml-2"></i></a></div>
-                    </div>
+            <!-- Prev & Next Topbar -->
+            <div style="display: none;" id="prevNext">
+                <hr class="mb-4">
+                <div class="row no-gutters px-2 mb-n3 font-weight-bold text-uppercase">
+                    <div class="col-6 px-1"><a id="entryPrev" href=""><i class="fa fa-chevron-left mr-2"></i><span></span></a></div>
+                    <div class="col-6 px-1 text-right order-md-1"><a id="entryNext" href=""><span></span><i class="fa fa-chevron-right ml-2"></i></a></div>
                 </div>
-
             </div>
 
-
-            <!-- Repeated Items Render Here
-            ----------------------------------------------------------------- -->
-            <ul class="row no-gutters list list-unstyled m-n2"></ul>
-
         </div>
+
+        <!-- Repeated Items Render Here -->
+        <ul class="row no-gutters list list-unstyled m-n2"></ul>
 
     </div>
 
+</div>
 
 
-    <!-- --------------------------------------------------------------------
-    <-- Repeat Items
-    <-- Do not remove 'display:none;'
-    <-- Edit these to your liking
-    <-------------------------------------------------------------------- -->
-    <div style="display:none;">
+<!-- Repeat Items (do not remove 'display:none;') -->
+<div style="display:none;">
 
+    <!-- Faux Folder Buttons -->
+    <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-filter-buttons">
+        <a class="btn btn-primary d-block" href=""></a>
+    </div>
 
-        <!-- Faux Folder Buttons
-        ------------------------------------------------------------------- -->
-        <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-filter-buttons">
-            <a class="btn btn-primary d-block" href=""></a>
-        </div>
+    <!-- Gallery Items -->
+    <li class="col-lg-3 col-sm-6 p-2" id="charadex-entries">
+        <a class="card h-100 cardlink" href="">
+            <h5 class="card-header text-center design"></h5>
+            <div class="card-body d-flex flex-fill">
+                <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
+            </div>
+        </a>
+    </li>
 
+    <!-- Singular Item -->
+    <li class="col-12 p-2" id="charadex-card">
 
-        <!-- Gallery Items
-        ------------------------------------------------------------------- -->
-        <li class="col-lg-3 col-sm-6 p-2" id="charadex-entries">
-            <a class="card h-100 cardlink" href="">
-                <h5 class="card-header text-center design"></h5>
-                <div class="card-body d-flex flex-fill">
-                    <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
-                </div>
-            </a>
-        </li>
+        <!-- Actual Card -->
+        <div class="card">
 
+            <!-- Header -->
+            <h2 class="card-header text-center p-4">
+                <a class="cardlink design"></a> (<a class="cardlinkalt" href="">#<span class="id"></span></a>)
+            </h2>
 
-        <!-- Singular Item
-        ------------------------------------------------------------------- -->
-        <li class="col-12 p-2" id="charadex-card">
+            <!-- Main Info -->
+            <div class="px-md-5 pt-md-5 p-4">
 
-            <!-- Actual Card -->
-            <div class="card">
+                <!-- Character Info -->
+                <div class="row no-gutters">
 
-                <!-- Header -->
-                <h2 class="card-header text-center p-4">
-                    <a class="cardlink design"></a> (<a class="cardlinkalt" href="">#<span class="id"></span></a>)
-                </h2>
+                    <!-- Image -->
+                    <div class="col-md-5 p-3">
+                        <div class="mx-auto w-100 text-center" oncontextmenu="return false">
+                            <img class="image img-fluid" src="">
+                        </div>
+                    </div>
 
+                    <!-- Information List -->
+                    <div class="col-md-7 p-3">
 
-                <!--Main Info -->
-                <div class="px-md-5 pt-md-5 p-4">
-
-                    <!-- Character Info -->
-                    <div class="row no-gutters">
-
-
-                        <!-- Image -->
-                        <div class="col-md-5 p-3">
-                            <div class="mx-auto w-100 text-center" oncontextmenu="return false">
-                                <img class="image img-fluid" src="">
-                            </div>
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Owner</b>
+                            <span class="owner"></span>
                         </div>
 
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Artist</b>
+                            <span class="artist"></span>
+                        </div>
 
-                        <!-- Information List -->
-                        <div class="col-md-7 p-3">
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Designer</b>
+                            <span class="designer"></span>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Owner</b>
-                                <span class="owner"></span>
-                            </div>
+                        <hr>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Artist</b>
-                                <span class="artist"></span>
-                            </div>
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Species</b>
+                            <span class="species"></span>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Designer</b>
-                                <span class="designer"></span>
-                            </div>
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Rarity</b>
+                            <span class="rarity"></span>
+                        </div>
 
-                            <hr>
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Design Type</b>
+                            <span class="designtype"></span>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Species</b>
-                                <span class="species"></span>
-                            </div>
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Value</b>
+                            <span><span class="value"></span></span>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Rarity</b>
-                                <span class="rarity"></span>
-                            </div>
+                        <!-- Item -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <b class="text-muted">Status</b>
+                            <span class="status"></span>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Design Type</b>
-                                <span class="designtype"></span>
-                            </div>
+                        <hr>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Value</b>
-                                <span><span class="value"></span></span>
-                            </div>
+                        <!-- Item -->
+                        <div class="">
+                            <b class="text-muted">Traits</b>
+                            <div class="pl-3 text-pre traits"></div>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Status</b>
-                                <span class="status"></span>
-                            </div>
+                        <hr>
 
-                            <hr>
+                        <!-- Item -->
+                        <div class="">
+                            <b class="text-muted">Notes</b>
+                            <div class="pl-3 text-pre notes"></div>
+                        </div>
 
-                            <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Traits</b>
-                                <div class="pl-3 text-pre traits"></div>
-                            </div>
+                        <hr>
 
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Notes</b>
-                                <div class="pl-3 text-pre notes"></div>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Transaction Log</b>
-                                <div class="pl-3 pt-2 small" id="log-table">
-                                    <div class="d-none">
-                                        <div class="row no-gutters" id="log-entry">
-                                            <div class="col-md-3"><span class="timestamp"></span></div>
-                                            <div class="col-md-9"><span class="reason"></span></div>
-                                        </div>
+                        <!-- Item -->
+                        <div class="">
+                            <b class="text-muted">Transaction Log</b>
+                            <div class="pl-3 pt-2 small" id="log-table">
+                                <div class="d-none">
+                                    <div class="row no-gutters" id="log-entry">
+                                        <div class="col-md-3"><span class="timestamp"></span></div>
+                                        <div class="col-md-9"><span class="reason"></span></div>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Add more list items above this line-->
                         </div>
+
+                        <!-- Add more list items above this line -->
                     </div>
                 </div>
             </div>
-        </li>
+        </div>
+    </li>
 
-
-    </div>
+</div>
