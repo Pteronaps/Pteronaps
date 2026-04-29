@@ -524,4 +524,8 @@ body {
     input, textarea, select, .form-control { font-size: 16px !important; }
 }
 
+/* Lift ekko-lightbox above the navbar (which sits at z-index: 2000) */
+.modal-backdrop { z-index: 2050; }
+.ekko-lightbox { z-index: 2060; }
+
 img { height: auto; max-width: 100%; }
