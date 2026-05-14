@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/pteroicon.png" />
+    <title>About World</title>
+    <meta property="title" content="Pteronaps" />
+    <meta property="type" content="website" />
+    <meta property="url" content="https://pteronaps.com/" />
+    <meta property="image" content="/assets/pterobanner.png" />
+    <meta name="description" content="The official Charadex for the Pteronaps closed species!">
+
+    <meta name="robots" content="noai, noimageai">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ekko-lightbox@5.3.0/dist/ekko-lightbox.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/styles/charadex.css">
+    <link rel="stylesheet" type="text/css" href="/styles/pteronaps.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+</head>
+
+<body class="split-body d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg split-nav">
+    <div class="container-fluid px-0">
+        <a class="nav-logo d-flex align-items-center justify-content-center flex-shrink-0" href="/">
+            <img src="/assets/pteroicon.png" alt="Pteronaps">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav" aria-controls="charadexnav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse nav-menu-strip ml-lg-3 mt-2 mt-lg-0" id="charadexnav">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link" href="/">Pteronaps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news/">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Explore <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <a class="dropdown-item" href="/species/">About Species & Traits</a>
+                        <a class="dropdown-item" href="/world/">About World</a>
+                        <a class="dropdown-item" href="/pets/">About Pets</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://toyhou.se/~world/68456.pteronaps">Toyhou.se</a>
+                        <a class="dropdown-item" href="https://discord.gg/G7PVCa24Me">Discord Server</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Catalogue <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <a class="dropdown-item" href="/masterlist/">Species Masterlist</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/prompts/">Prompts</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/items/">Item Catalogue</a>
+                        <a class="dropdown-item" href="/inventories/">Player Inventories</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Help <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <a class="dropdown-item" href="/staff/">About Us</a>
+                        <a class="dropdown-item" href="/terms/">TOS</a>
+                        <a class="dropdown-item" href="/faq/">FAQ</a>
+                        <a class="dropdown-item" href="/bases/">F2U Bases</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://toyhou.se/~messages/create/kikos">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop" hidden></div>
+
+    <!-- Page body -->
+    <div class="split-body-wrap container-fluid flex-fill p-3 p-md-4">
+        <div class="split-outer-row d-flex flex-column flex-lg-row align-items-stretch">
+            <!-- Sidebar (offcanvas below lg) -->
+            <aside class="split-left-col flex-shrink-0 d-flex flex-column" id="splitSidebar" tabindex="-1" aria-label="Page sidebar">
+                <button type="button" class="sidebar-close d-lg-none" aria-label="Close sidebar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="featured-box w-100 position-relative overflow-hidden">
+                    
+                    <img src="/assets/pterobanner.png" alt="">
+                    
+                </div>
+                <ul class="sign-list list-unstyled d-flex flex-column m-0">
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/species/">About & Traits</a></li>
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/prompts/">Prompts</a></li>
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/items/">Items</a></li>
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/staff/">Staff</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main column -->
+            <div class="split-right-col flex-fill d-flex flex-column">
+                <div class="header-strip w-100 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between flex-shrink-0">
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="sidebar-toggle d-lg-none" aria-controls="splitSidebar" aria-expanded="false" aria-label="Toggle sidebar">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                        <span class="species-name">About World</span>
+                    </div>
+                </div>
+
+                <main class="main-block w-100 flex-fill">
+                    
+<!-- About World -->
+<div class="container-fluid text-center softload" id="main-container">
+
+    <!-- General Info -->
+    <div class="card p-md-5 p-4">
+        <h1 class="text-primary mb-3">About World</h1>
+        <div class="pl-4">
+
+            <h1><b>Pteronaps World Map:</b></h1>
+            <p>The main world and map to the world Pteronaps live in!</p>
+            <p>You are free to include your own Naps into this canon world, though it is not required!</p>
+            <p><img class="img-fluid" src="https://static.wixstatic.com/media/3a00f2_f0cb3099acb54f30a049c96264ff4ddc~mv2.png/v1/fill/w_758,h_758,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/santcuary%20with%20words%202.png" alt="" height="384" width="768"></p>
+            <p><img class="img-fluid" src="https://static.wixstatic.com/media/3a00f2_d25aa075859847e0b7c4166b119f3418~mv2.png/v1/fill/w_758,h_758,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/new%20world%20map%20with%20words.png" alt="" height="384" width="768"></p>
+
+            <h3><b>MAIN TARGETS OF INTEREST:</b></h3>
+
+            <p><b>★ Main Building and Dome:</b>
+                The building where the Pteronap Sanctuary workers live and work at.</p>
+
+            <p><b>★ Greenhouses:</b>
+                Where they grow different kinds of fruits and veggies for the Naps.</p>
+
+            <p><b>★ Berry Field:</b>
+                The primary fields where Star Berries are grown!</p>
+
+            <p><b>★ Pteronap Apartments:</b>
+                Where the little Nap residents stay at in the sanctuary.</p>
+
+            <p><b>★ Wing-Clip Mountain:</b>
+                The large mountain South of the sanctuary. Many injured Naps are rescued here.</p>
+
+            <p><b>★ Sepia Creek:</b>
+                The small creek named after Sepia. Many wild Naps get fresh water here, and living beneath the water are Waternaps, the Pteronap subspecies.</p>
+
+            <p><b>★ Evergreen Thicket:</b>
+                The large forest area East of the sanctuary, where wild Pteronaps can be found.</p>
+
+            <p><b>★ Release Zone:</b>
+                Where rehabilitated Naps are released back into the wild. Waternaps are released back into Sepia's Creek or surrounding streams and ponds.</p>
+
+            <p><b>★ Wild Colonies:</b>
+                There are currently four known wild colonies of Pteronaps living around the Sanctuary! It is unknown how many Waternap colonies there are, however.</p>
+
+            <h1><b>Meet The Workers!:</b></h1>
+
+            <p><img class="img-fluid" src="https://static.wixstatic.com/media/3a00f2_cea7a7a4803d456b94cb298282972acc~mv2.png/v1/fill/w_508,h_508,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3a00f2_cea7a7a4803d456b94cb298282972acc~mv2.png" alt="" height="384" width="768"></p>
+            <h3><b>Luka | They/Them</b></h3>
+            <p>Luka is the current head-of-office for the small Sanctuary! With a kind heart and a smart mind, they certainly fit the role to play as the person-in-charge for taking care of the Pteronap residents!</p>
+
+            <p><img class="img-fluid" src="https://static.wixstatic.com/media/3a00f2_2dca6246c65442ed9b3453c2f42d525e~mv2.png/v1/fill/w_508,h_508,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3a00f2_2dca6246c65442ed9b3453c2f42d525e~mv2.png" alt="" height="384" width="768"></p>
+            <h3><b>Hana | She/Her</b></h3>
+            <p>Hana is the worker who takes care of the garden and feeds all of the little Pteronap residents! She also helps with any injuries newcomers may have, as well as giving every Nap baths, hugs and kisses!</p>
+        </div>
+    </div>
+</div>
+
+                </main>
+
+                <footer class="credits-strip w-100 d-flex flex-column flex-md-row align-items-md-center justify-content-md-between flex-wrap flex-shrink-0">
+                    <span class="credits-text">Species & art (c) kikos, Locke, polarsv. Site powered by Charadex.</span>
+                    <nav class="credits-links d-flex flex-wrap" aria-label="Footer links">
+                        <a href="/terms/">Terms</a>
+                        <a href="/faq/">FAQ</a>
+                        <a href="https://toyhou.se/~messages/create/kikos">Contact</a>
+                    </nav>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <button id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ekko-lightbox@5.3.0/dist/ekko-lightbox.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({ alwaysShowClose: true });
+        });
+    </script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.0/list.min.js" crossorigin="anonymous"></script>
+    <script src="/styles/config.js"></script>
+    <script src="/styles/charadex.js"></script>
+    <script>frontPage(options.index);</script>
+    
+    <script src="/styles/pteronaps.js"></script>
+</body>
+</html>

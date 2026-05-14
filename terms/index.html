@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/pteroicon.png" />
+    <title>TOS</title>
+    <meta property="title" content="Pteronaps" />
+    <meta property="type" content="website" />
+    <meta property="url" content="https://pteronaps.com/" />
+    <meta property="image" content="/assets/pterobanner.png" />
+    <meta name="description" content="The official Charadex for the Pteronaps closed species!">
+
+    <meta name="robots" content="noai, noimageai">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ekko-lightbox@5.3.0/dist/ekko-lightbox.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/styles/charadex.css">
+    <link rel="stylesheet" type="text/css" href="/styles/pteronaps.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+</head>
+
+<body class="split-body d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg split-nav">
+    <div class="container-fluid px-0">
+        <a class="nav-logo d-flex align-items-center justify-content-center flex-shrink-0" href="/">
+            <img src="/assets/pteroicon.png" alt="Pteronaps">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav" aria-controls="charadexnav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse nav-menu-strip ml-lg-3 mt-2 mt-lg-0" id="charadexnav">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link" href="/">Pteronaps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news/">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Explore <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <a class="dropdown-item" href="/species/">About Species & Traits</a>
+                        <a class="dropdown-item" href="/world/">About World</a>
+                        <a class="dropdown-item" href="/pets/">About Pets</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://toyhou.se/~world/68456.pteronaps">Toyhou.se</a>
+                        <a class="dropdown-item" href="https://discord.gg/G7PVCa24Me">Discord Server</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Catalogue <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <a class="dropdown-item" href="/masterlist/">Species Masterlist</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/prompts/">Prompts</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/items/">Item Catalogue</a>
+                        <a class="dropdown-item" href="/inventories/">Player Inventories</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Help <i class="fas fa-chevron-down nav-link-icon fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-lg-right">
+                        <a class="dropdown-item" href="/staff/">About Us</a>
+                        <a class="dropdown-item" href="/terms/">TOS</a>
+                        <a class="dropdown-item" href="/faq/">FAQ</a>
+                        <a class="dropdown-item" href="/bases/">F2U Bases</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://toyhou.se/~messages/create/kikos">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop" hidden></div>
+
+    <!-- Page body -->
+    <div class="split-body-wrap container-fluid flex-fill p-3 p-md-4">
+        <div class="split-outer-row d-flex flex-column flex-lg-row align-items-stretch">
+            <!-- Sidebar (offcanvas below lg) -->
+            <aside class="split-left-col flex-shrink-0 d-flex flex-column" id="splitSidebar" tabindex="-1" aria-label="Page sidebar">
+                <button type="button" class="sidebar-close d-lg-none" aria-label="Close sidebar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="featured-box w-100 position-relative overflow-hidden">
+                    
+                    <img src="/assets/pterobanner.png" alt="">
+                    
+                </div>
+                <ul class="sign-list list-unstyled d-flex flex-column m-0">
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/species/">About & Traits</a></li>
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/prompts/">Prompts</a></li>
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/items/">Items</a></li>
+                    <li><a class="sign-btn d-flex align-items-center w-100 text-uppercase" href="/staff/">Staff</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main column -->
+            <div class="split-right-col flex-fill d-flex flex-column">
+                <div class="header-strip w-100 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between flex-shrink-0">
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="sidebar-toggle d-lg-none" aria-controls="splitSidebar" aria-expanded="false" aria-label="Toggle sidebar">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                        <span class="species-name">TOS</span>
+                    </div>
+                </div>
+
+                <main class="main-block w-100 flex-fill">
+                    
+<!-- Terms of Service -->
+<div class="container-fluid text-center softload" id="main-container">
+
+    <!-- Intro -->
+    <div class="card px-md-5 pt-md-5 p-4 mb-5">
+        <h1 class="text-primary mb-3">Terms of Service</h1>
+        <div class="pl-4">
+            <p>All owners of Pteronap are covered under the following Terms of Service. By becoming the owner of a Pteronap, you agree to these terms.</p>
+        </div>
+        <hr>
+        <div class="text-center small text-muted">
+            These terms may be subject to change.<br>
+            Last Update: 09/08/24
+        </div>
+    </div>
+
+    <!-- Section I -->
+    <div class="card p-md-5 p-4 mb-5">
+        <h1 class="text-primary mb-3">General Rules & Adoption/Ownership</h1>
+        <div class="ml-4 mb-0">
+            <p>The Pteronaps species is a CLOSED species created and owned by Locke and kikos. Pteronaps are only titled as "official made" if created by Locke and/or kikos. Guest artists do not count for official designs.
+                As a closed species, you may only make your own with an obtained MYO Slot.</p>
+
+            <p>Official Pteronaps are obtainable through auctions, flat sales, and raffles.
+                A Pteronap does not become officially owned by the buyer until fully paid for. Failure for payment in an auction or a flat sale will result in a warning, and can lead up to you being banned from the species if there are further issues.</p>
+
+            <p><b>If you are found breaking the rules:</b></p>
+            <p>Although Locke and kikos do not have the right to take a design from someone, the Pteronap owned will instead be removed from the species group, and will not be associated with Pteronaps whatsoever. The user themselves will also be banned. You will also not be allowed to participate in any Pteronap related events after being banned.</p>
+
+            <p><b>When owning a Pteronap, you may not:</b></p>
+            <ul>
+                <li>Claim the species as your own</li>
+                <li>Use your Pteronap for commercial purposes</li>
+                <li>Merge it with another species/make hybrids</li>
+                <li>Make any race/religion/political based artwork featuring a Pteronap</li>
+                <li>Use any pop culture references in either your Pteronap's design or clothing, this includes making Pteronaps designed after canon characters</li>
+                <li>Make NSFW artwork of your Pteronaps in any way</li>
+            </ul>
+        </div>
+
+        <br>
+
+        <h1 class="text-primary mb-3">Documentation</h1>
+        <div class="ml-4 mb-0">
+            <p>All Pteronaps are uploaded and documented on this website. ONLY official and Guest Artist Pteronaps will have their traits listed. Pteronap profiles will be kept track of privately off-site. This site also stores player inventories and the item catalogue.</p>
+
+            <p>Please do not delete your Pteronaps off of ToyHouse, please always keep their profiles up for private masterlist tracking purposes.</p>
+            <p><b>You are now REQUIRED to PM kikos on ToyHouse for masterlist changes.</b></p>
+
+            <p>The masterlist is the only way that Pteronaps are considered real. If your Pteronap is not on the masterlist, but you know that you made it legally, please contact kikos with the design so that it can be uploaded.</p>
+            <p>kikos primarily uploads new Pteronaps in batches, but please allow up to 2-3 days for your Pteronap to be uploaded onto the site.</p>
+
+            <p>Pteronaps can be voided, but the traits that make them a Pteronap must be changed! And they must be turned into a regular design with no obvious relation to the species. See the F.A.Q page for more information.</p>
+            <p>All MYO Pteronaps must be shown to kikos before approval; please do not forget to send your Pteronaps in after you have created them!</p>
+        </div>
+    </div>
+
+    <!-- Section II -->
+    <div class="card p-md-5 p-4 mb-5">
+        <h1 class="text-primary mb-3">Means of Purchase</h1>
+        <div class="ml-4 mb-0">
+            <p>Official Pteronaps designs can be purchased via PayPal in USD. Newly made and suspicious accounts <b>will not</b> be able to purchase Pteronaps.
+                You are able to buy a Pteronap for someone else, just inform kikos of the plan first. <u>No split payments are allowed for any of the adopts.</u></p>
+        </div>
+
+        <br>
+
+        <h1 class="text-primary mb-3">Payment Plans</h1>
+        <div class="ml-4 mb-0">
+            <p>When purchasing Pteronaps for much higher prices, the price will affect the duration of the payment plan. There is <b>no</b> set amount of time for
+                payment plans, as it will all depend on the final price of the adoptable. <b>A nonrefundable 30% down payment is required for every adopt with a
+                payment plan.</b></p>
+
+            <p>If you back out of a payment, this will result in a <u>temporary ban</u> from purchasing any type of Pteronap from the species. <b>Please only bid/buy
+                if you have the exact amount ready.</b></p>
+
+            <p>You are <b>not allowed</b> to drop out of an auction if you are the current highest bidder. For flat sales, edited comments will simply be ignored.</p>
+        </div>
+
+        <br>
+
+        <h1 class="text-primary mb-3">Trading / Resales / Vouchers</h1>
+        <div class="ml-4 mb-0">
+            <p>You are allowed to freely trade/swap your Pteronaps within or outside the species world. You are <b>not allowed</b> to sell your Pteronap for more than you
+                bought it for, <u>unless</u> it has commissioned artwork. As of 8/4/24, vouchers are now allowed.</p>
+
+            <p>Pteronaps and slots received for free <b>cannot be sold, even if there is added artwork</b>. Pteronaps received from DTAs and WTAs cannot be sold either.
+                These Pteronaps are only allowed to be traded/swapped or gifted.</p>
+        </div>
+
+        <br>
+
+        <h1 class="text-primary mb-3">Co-Ownership</h1>
+        <div class="ml-4 mb-0">
+            <p><b>Co-owning Pteronaps is not allowed in any way, shape, or form. Please do not own your Pteronap with another person. Only one person per Pteronap design.</b></p>
+        </div>
+    </div>
+
+    <!-- Section III -->
+    <div class="card p-md-5 p-4 mb-5">
+        <h1 class="text-primary mb-3">NSFW Rules and Information</h1>
+        <div class="ml-4 mb-0">
+            <p><b><u>PTERONAPS ARE A COMPLETELY SFW SPECIES!</u></b></p>
+            <p><b><u>NO NSFW CAN BE MADE OF THEM IN ANY WAY!</u></b></p>
+
+            <p>If we catch anybody in the community above the age of 18 distributing NSFW to minors in any format, said person will be banned from the species,
+                along with all of their Naps being voided. The minor will be put into a temporary ban from the species.</p>
+
+            <p>If the action is caught again with the same minor, all of the minor's Naps will be voided from the species and they will also be banned.</p>
+        </div>
+
+        <br>
+
+        <h1 class="text-primary mb-3">Blacklist</h1>
+        <div class="ml-4 mb-0">
+            <p>These are the current blacklisted users. They cannot own or participate in Pteronaps in <b><u>ANY WAY, SHAPE, OR FORM!:</u></b></p>
+
+            <ul>
+                <li>komugitsune</li>
+                <li>sukoshi</li>
+                <li>Phaze/Phazed_/AkaAlumni</li>
+                <li>Bullies</li>
+                <li>nekomimi</li>
+            </ul>
+
+            <br>
+
+            <p>All of those names are their <u>ToyHouse usernames</u>.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="card p-md-5 p-4 mb-5">
+        <div class="ml-4 mb-0">
+            <p>
+                <i>If you feel there is somebody breaking the rules of this TOS, please directly PM kikos on ToyHouse and add on the proof you may have of said person breaking the rules. Thank you!</i>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+                </main>
+
+                <footer class="credits-strip w-100 d-flex flex-column flex-md-row align-items-md-center justify-content-md-between flex-wrap flex-shrink-0">
+                    <span class="credits-text">Species & art (c) kikos, Locke, polarsv. Site powered by Charadex.</span>
+                    <nav class="credits-links d-flex flex-wrap" aria-label="Footer links">
+                        <a href="/terms/">Terms</a>
+                        <a href="/faq/">FAQ</a>
+                        <a href="https://toyhou.se/~messages/create/kikos">Contact</a>
+                    </nav>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <button id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ekko-lightbox@5.3.0/dist/ekko-lightbox.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({ alwaysShowClose: true });
+        });
+    </script>
+
+    
+    <script src="/styles/pteronaps.js"></script>
+</body>
+</html>
