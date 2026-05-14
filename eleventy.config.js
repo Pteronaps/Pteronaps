@@ -9,7 +9,6 @@ export default function (eleventyConfig) {
       output: "_site",
       includes: "_includes",
     },
-    // Process .html files as Liquid (default in v3 is null — must set explicitly)
     htmlTemplateEngine: "liquid",
   };
 }
